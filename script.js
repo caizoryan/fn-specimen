@@ -23,6 +23,9 @@ let images = [
 	"./images/img_19.jpg",
 	"./images/img_20.jpg",
 	"./images/img_21.jpg",
+	"./images/img_22.jpg",
+	"./images/img_23.jpg",
+	"./images/img_24.jpg",
 
 ]
 
@@ -44,12 +47,10 @@ let image_scroll = () => {
 		div [style=margin-bottom:20px]
 			a [href=./modulator/index.html]
 				span -- Visit Typeface Modulator
-			span -- (Modulate and animate)
 
 		div
 			a [href=./index.html]
 				span -- (WIP) Visit Typeface Tester
-			span -- (Test typeface for readability)
 `
 }
 
