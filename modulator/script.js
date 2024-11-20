@@ -127,7 +127,7 @@ let page = () => {
 		align-items: center;
 `
 	let font_slider = () => slider(fontSize, fontSize.set, 10, 500)
-	let speed_slider = () => slider(increment, (val) => increment.set(parseFloat(val)), .01, 1)
+	let speed_slider = () => slider(0, (val) => increment.set(parseFloat(val)), .01, 1)
 	let x_slider = () => slider(t_x, t_x.set, -2, 2)
 	let y_slider = () => slider(t_y, t_y.set, -2, 2)
 	let r_z_slider = () => slider(r_z, r_z.set, -1, 1)
@@ -147,7 +147,7 @@ let page = () => {
 
 			when ${show}
 			then ${() => html`
-			button [onclick=${toggle_stagnate}] -- ${increment() == 0 ? "Start" : "Stagnate"}
+			button [onclick=${toggle_stagnate}] -- ${mem(() => increment() == 0 ? "Start" : "Stagnate")}
 			.title -- Word(s): 
 			div -- ${() => text_box(text, text.set)}
 
