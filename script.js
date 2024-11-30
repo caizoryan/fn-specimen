@@ -49,7 +49,7 @@ let image_scroll = () => {
 				span -- Visit Typeface Modulator
 
 		div
-			a [href=./index.html]
+			a [href=./type-tester/index.html]
 				span -- (WIP) Visit Typeface Tester
 `
 }
